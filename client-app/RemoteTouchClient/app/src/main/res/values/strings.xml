@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remote Touch Client</string>
+    <string name="nodevicefound"><![CDATA[No target found.   Hit refresh button to scan again, or enter target device IP manually.]]></string>
+    <string name="message_scanInProgress">Automatic scan in progress...</string>
+    <string name="message_noOfDevicesFound">%1$d device(s) found. Hit refresh to scan again.</string>
+    <string name="manualIpEntryHing">Enter target device IP manually</string>
+</resources>

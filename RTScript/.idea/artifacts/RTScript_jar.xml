@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RTScript:jar">
+    <output-path>$PROJECT_DIR$/out/</output-path>
+    <root id="archive" name="RTScript.jar">
+      <element id="module-output" name="RTScript" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/apktool.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
