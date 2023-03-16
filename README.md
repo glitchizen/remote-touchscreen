@@ -22,9 +22,11 @@ This project consists of two parts:
 
 -----------
 
-![](built-samples/demo.mp4)
+[demo.webm](https://user-images.githubusercontent.com/119003089/225643025-c9d69702-c37b-4158-a658-8e11c0ef4c95.webm)
 
------------------------
+[demo.mp4](built-samples/demo.mp4)
+
+-----------
 
 A third part of this project is the RTScript, which is an ugly single file *script* in java that automates modification of normal apps into "*target app*", using apktool, our lord and saviour.
 
