@@ -1,10 +1,14 @@
 ### Remote Touch
 
-Briefly put, this repo contains the necessary tools which make it possible for one device to act like a touchscreen for (an app running on) some other device, without any special access privilege required on any device.
+[demo.webm](https://user-images.githubusercontent.com/119003089/225643025-c9d69702-c37b-4158-a658-8e11c0ef4c95.webm)
+
+[demo.mp4](https://raw.githubusercontent.com/hmmnoice/remote-touchscreen/master/built-samples/demo.mp4)
+
+This repo contains the necessary tools which make it possible for one device to act like a touchscreen for (an app running on) some other device, without any special access privilege required on any device.
 
 It does NOT require any quirks like adb or Accessibility Service, and does NOT require root privileges.
 
-Instead, it requires the target app (the one to be remotely controlled) to be specially modded for the purpose (detailed instructions below). As such, it can be utilized to control apps running on normal devices over, for example, the same wifi network. This allows for silent remote controllability without any overlays or permissions. Moreover, it supports all sorts of touch events (like multi touch gestures) and emulates them as-is on the target app('s current activity) with negligible latency. 
+Instead, it requires the target app (the one to be remotely controlled) to be specially modded for the purpose (detailed instructions below). As such, it can be utilized to control apps running on normal devices over, for example, the same wifi network. This allows for silent remote controllability without any overlays or permissions. Moreover, it supports all sorts of touch events (like multi touch gestures) and emulates them as-is on the target app with negligible latency. 
 
 ### Structure
 
@@ -18,17 +22,10 @@ This project consists of two parts:
   
   The user (you?) has to generate a "*target app*" themselves. Most simple android apps can be transformed into a target app by following a procedure outlined [below](#The-Instructions).
   
-  The example video below uses the "VLC for Android", and "Multi Touch Test" as the target apps. The modified apk in use (for Multi Touch Test) is available in [built-samples/sample-target-app](built-samples/sample-target-app) for you to try.
+  The example video above uses the "VLC for Android", and "Multi Touch Test" as the target apps. The modified apk in use (for Multi Touch Test) is available in [built-samples/sample-target-app](built-samples/sample-target-app) for you to try.
 
------------
 
-[demo.webm](https://user-images.githubusercontent.com/119003089/225643025-c9d69702-c37b-4158-a658-8e11c0ef4c95.webm)
-
-[demo.mp4](built-samples/demo.mp4)
-
------------
-
-A third part of this project is the RTScript, which is an ugly single file *script* in java that automates modification of normal apps into "*target app*", using apktool, our lord and saviour.
+A third part of this project is the RTScript, which is a quick n dirty single file java program that automates modification of an app into "*target app*", using apktool, our lord and saviour.
 
 ### The Instructions
 
